@@ -4,7 +4,7 @@ type t('a);
 external createQueue: (array('a), ('a, 'a) => int) => t('a) = "tinyqueue";
 
 let fromArray = (data, cmp) => createQueue(data->Js.Array.copy, cmp);
-let make = cmp => fromArray([||], cmp);
+let make = cmp => createQueue([||], cmp);
 
 [@bs.send] external pushItem: (t('a), 'a) => unit = "push";
 let push = (queue, item) => queue->pushItem(item);
