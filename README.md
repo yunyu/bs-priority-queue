@@ -32,7 +32,7 @@ Js.log(minQueue->PriorityQueue.pop); /* Returns 5 */
 Js.log(minQueue->PriorityQueue.peek); /* Returns 7 */
 
 /* Get the length of the queue */
-Js.log(minQueue->PriorityQueue.length);
+Js.log(minQueue->PriorityQueue.length); /* Returns 2 */
 
 /* Populate a priority queue with an existing array */
 let minQueue = PriorityQueue.fromArray([|7, 5, 10|], Pervasives.compare);
