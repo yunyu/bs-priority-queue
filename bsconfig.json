@@ -5,5 +5,12 @@
     "dir": "src"
   },
   "suffix": ".bs.js",
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "warnings": {
+    "error": "+101"
+  },
   "refmt": 3
 }

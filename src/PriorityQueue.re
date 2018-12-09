@@ -3,7 +3,7 @@ type t('a);
 [@bs.new] [@bs.module]
 external createQueue: (array('a), ('a, 'a) => int) => t('a) = "tinyqueue";
 
-let fromArray = (data, cmp) => createQueue(data, cmp);
+let fromArray = (data, cmp) => createQueue(data->Js.Array.copy, cmp);
 let make = cmp => fromArray([||], cmp);
 
 [@bs.send] external pushItem: (t('a), 'a) => unit = "push";
