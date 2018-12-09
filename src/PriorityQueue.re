@@ -26,4 +26,4 @@ let popExn = queue =>
   };
 
 [@bs.get] external getLength: t('a) => int = "length";
-let length = queue => queue->getLength;
+let size = queue => queue->getLength;

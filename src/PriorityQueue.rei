@@ -6,4 +6,4 @@ let peek: t('a) => option('a);
 let peekExn: t('a) => 'a;
 let pop: t('a) => option('a);
 let popExn: t('a) => 'a;
-let length: t('a) => int;
+let size: t('a) => int;

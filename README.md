@@ -37,8 +37,8 @@ Js.log(minQueue->PriorityQueue.popExn); /* Returns 7 */
 /* Return the top item, throwing Not_found if the queue is empty */
 Js.log(minQueue->PriorityQueue.peekExn); /* Returns 10 */
 
-/* Get the length of the queue */
-Js.log(minQueue->PriorityQueue.length); /* Returns 1 */
+/* Get the size of the queue */
+Js.log(minQueue->PriorityQueue.size); /* Returns 1 */
 
 /* Populate a priority queue with an existing array */
 let minQueue = PriorityQueue.fromArray([|7, 5, 10|], Pervasives.compare);
