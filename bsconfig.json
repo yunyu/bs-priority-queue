@@ -1,0 +1,9 @@
+{
+  "name": "bs-priority-queue",
+  "version": "0.1.0",
+  "sources": {
+    "dir": "src"
+  },
+  "suffix": ".bs.js",
+  "refmt": 3
+}
